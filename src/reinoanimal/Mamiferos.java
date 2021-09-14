@@ -1,14 +1,14 @@
 package reinoanimal;
 
-public class Peixes extends Cordados{
+public class Mamiferos extends Cordados{
 
-    public Peixes(String nome) {
-        super(nome, "branquial", true, "escamas", "aquatico", "peixe");
+    public Mamiferos(String nome) {
+        super(nome, "pulmonar", false, "pelos", "terrestre", "mamifero");
     }
-    
+
     @Override
     public void locomoção() {
-        System.out.println("Nadando\n");
+        System.out.println("Andam\n");
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Peixes extends Cordados{
         System.out.println("Respiração: " + this.respiracao);
         System.out.println("Pecilotermico: " + this.pecilotermico);
         System.out.println("Habitat: " + this.habitat);
-        System.out.println(" ");
+        System.out.println("");
     }
     
 }

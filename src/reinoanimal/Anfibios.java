@@ -1,14 +1,14 @@
 package reinoanimal;
 
-public class Peixes extends Cordados{
+public class Anfibios extends Cordados{
 
-    public Peixes(String nome) {
-        super(nome, "branquial", true, "escamas", "aquatico", "peixe");
+    public Anfibios(String nome) {
+        super(nome, "branquial/pulmonar", true, "pegajosa", "aquático/terrestre", "anfibio");
     }
-    
+
     @Override
     public void locomoção() {
-        System.out.println("Nadando\n");
+        System.out.println("Pulam\n");
     }
 
     @Override
