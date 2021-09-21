@@ -1,6 +1,6 @@
 package reinoanimal;
 
-public class Anfibios extends Cordados{
+public class Anfibios extends Cordados implements Interface{
 
     public Anfibios(String nome) {
         super(nome, "branquial/pulmonar", true, "pegajosa", "aquático/terrestre", "anfibio");
@@ -23,6 +23,16 @@ public class Anfibios extends Cordados{
         System.out.println("Pecilotermico: " + this.pecilotermico);
         System.out.println("Habitat: " + this.habitat);
         System.out.println(" ");
+    }
+    
+    @Override
+    public void comer() {
+        System.out.println("Comendo...");
+    }
+
+    @Override
+    public void urinar() {
+        System.out.println("Urinando...");
     }
     
 }

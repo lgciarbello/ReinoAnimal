@@ -1,6 +1,6 @@
 package reinoanimal;
 
-public class Mamiferos extends Cordados{
+public class Mamiferos extends Cordados implements Interface{
 
     public Mamiferos(String nome) {
         super(nome, "pulmonar", false, "pelos", "terrestre", "mamifero");
@@ -23,6 +23,16 @@ public class Mamiferos extends Cordados{
         System.out.println("Pecilotermico: " + this.pecilotermico);
         System.out.println("Habitat: " + this.habitat);
         System.out.println("");
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("Comendo...");
+    }
+
+    @Override
+    public void urinar() {
+        System.out.println("Urinando...");
     }
     
 }
